@@ -1,0 +1,30 @@
+// Rem Calculate: pass 'Xpx' to parameter. Important: put de unit 'px' 
+
+@function calculateRem($size) {
+	
+	$small: "@media only screen and (min-width:0px) and (max-width: 639px)";
+
+	$medium: "@media only screen and (min-width:640px) and (max-width: 1023px)";
+
+	$large: "@media only screen and (min-width:1024px) and (max-width: 1279px)";
+
+
+	@if #{$small} {
+		$rootEmSmall:16px;
+		$remSize: $size / $rootEmSmall;
+    	@return #{$remSize}rem;
+	}
+
+	@else if #{$medium}{
+		$rootEmMedium:16.5px;
+		$remSize: $size / $rootEmMedium;
+    	@return #{$remSize}rem;
+	}
+
+	@else if #{$large} {
+		$rootEmLarge:17px;
+		$remSize: $size / $rootEmLarge;
+    	@return #{$remSize}rem;
+	}
+    
+  }
