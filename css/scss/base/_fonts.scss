@@ -1,0 +1,117 @@
+// Fonts Imports to GoogleFonts 
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+// Font Family 
+
+$sans: 'Open Sans', sans-serif;
+
+
+// Font Weight 
+
+$thin: 100;
+
+$light: 300;
+
+$regular: 400;
+
+$medium: 500;
+
+$bold: 700;
+
+$ultra-bold: 900;
+
+
+// Font Color (with material design opacity) 
+
+$primary-text: rgba(black, 0.87);
+
+$secondary-text: rgba(black, 0.54);
+
+$disabled-text: rgba(black, 0.38);
+
+
+// Font Size and Styles Mixins to Material Design 
+
+@mixin display4{
+	font-family: $sans;
+	font-size: calculateRem(112px);
+	line-height: calculateRem(122px);
+	font-weight: $regular;
+}
+
+@mixin display3{
+	font-family: $sans;
+	font-size: calculateRem(56px);
+	line-height: calculateRem(66px);
+	font-weight: $regular;
+} 
+
+@mixin display2{
+	font-family: $sans;
+	font-size: calculateRem(45px); 
+	line-height: calculateRem(55px);
+	font-weight: $regular;
+}
+
+@mixin display1{
+	font-family: $sans;
+	font-size: calculateRem(34px); 
+	line-height: calculateRem(44px);
+	font-weight: $regular;
+}
+
+@mixin headline{
+	font-family: $sans;
+	font-size: calculateRem(24px);
+	font-size: calculateRem(34px);
+	font-weight: $regular;
+} 
+
+@mixin title{
+	font-family: $sans;
+	font-size: calculateRem(20px);
+	line-height: calculateRem(30px);
+	font-weight: $medium;
+}
+
+@mixin subheading{
+	font-family: $sans;
+	font-size: calculateRem(16px);
+	line-height: calculateRem(26px);
+	font-weight: $regular;
+}
+
+@mixin body2{
+	font-family: $sans;
+	font-size: calculateRem(14px);
+	line-height: calculateRem(24px);
+	font-weight: $medium;
+}
+
+@mixin body1{
+	font-family: $sans;
+	font-size: calculateRem(14px);
+	line-height: calculateRem(24px);
+	font-weight: $regular;
+}
+
+@mixin caption{
+	font-family: $sans;
+	font-size: calculateRem(12px);
+	line-height: calculateRem(22px);
+	font-weight: $regular;
+}
+
+@mixin button{
+	font-family: $sans;
+	font-size: calculateRem(14px);
+	line-height: calculateRem(24px);
+	font-weight: $medium;
+	text-transform: uppercase;
+}
+
+
+
+
+
