@@ -1,0 +1,292 @@
+// Aca Arranca La Grilla 
+
+// Este pedazo de codigo es importante,
+// porque hace que el padding no se sume al 
+// tamaño de los divs y forme parte de este 
+
+*, *:before, *:after { 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+// Small Screens (0px a 640px) 
+
+@media only screen and (min-width:0px) and (max-width: 639px){
+
+  html {
+    font-size: calculateRem(16px);
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: calculateRem(960px);
+    width: 100%;
+  }
+
+  .column {
+    float: left;
+    padding: calculateRem(8px);
+
+    &.sm12 {
+      width: 100%; /* 99.96% */
+    }
+
+    &.sm11 {
+      width: 91.63;
+    }
+
+    &.sm10 {
+      width: 83.3%;
+    }
+
+    &.sm9 {
+      width: 74.97;
+    }
+
+    &.sm8 {
+      width: 66.64%;
+    }
+
+    &.sm7 {
+      width: 58.31%;
+    }
+
+    &.sm6 {
+      width: 49.98%;
+    }
+
+    &.sm5 {
+      width: 41.65%;
+    }
+
+    &.sm4 {
+      width: 33.32%;
+    }
+
+    &.sm3 {
+      width: 24.99%;
+    }
+
+    &.sm2 {
+      width: 16.66%;
+    }
+
+    &.sm1 {
+      width: 8.33%;
+    }
+
+    &.flow-right-sm {
+      float: right;
+    }
+
+    &.flow-left-sm {
+      float: left;
+    }
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
+  .visible-sm {
+    display: block;
+  }
+}
+
+// Medium screens (640px) 
+
+@media only screen and (min-width:640px) and (max-width: 1023px){
+  
+  html {
+    font-size: calculateRem(16.5px);
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: calculateRem(960px);
+    width: 100%;
+  }
+
+  .column {
+    float: left;
+    padding: calculateRem(8px);
+
+    &.md12 {
+      width: 100%; /* 99.96% */
+    }
+
+    &.md11 {
+      width: 91.63;
+    }
+
+    &.md10 {
+      width: 83.3%;
+    }
+
+    &.md9 {
+      width: 74.97;
+    }
+
+    &.md8 {
+      width: 66.64%;
+    }
+
+    &.md7 {
+      width: 58.31%;
+    }
+
+    &.md6 {
+      width: 49.98%;
+    }
+
+    &.md5 {
+      width: 41.65%;
+    }
+
+    &.md4 {
+      width: 33.32%;
+    }
+
+    &.md3 {
+      width: 24.99%;
+    }
+
+    &.md2 {
+      width: 16.66%;
+    }
+
+    &.md1 {
+      width: 8.33%;
+    }
+
+    &.flow-right-md {
+      float: right;
+    }
+
+    &.flow-left-md {
+      float: left;
+    }
+  }
+
+  .hidden-md {
+    display: none;
+  }
+
+  .visible-md {
+    display: block;
+  }
+}
+
+// Large screens (1024px) 
+@media only screen and (min-width:1024px){
+  
+  html {
+    font-size: calculateRem(17px);
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: calculateRem(960px);
+    width: 100%;
+  }
+
+  .column {
+    float: left;
+    padding: calculateRem(8px);
+
+    &.xl12 {
+      width: 100%; /* 99.96% */
+    }
+
+    &.xl11 {
+      width: 91.63;
+    }
+
+    &.xl10 {
+      width: 83.3%;
+    }
+
+    &.xl9 {
+      width: 74.97;
+    }
+
+    &.xl8 {
+      width: 66.64%;
+    }
+
+    &.xl7 {
+      width: 58.31%;
+    }
+
+    &.xl6 {
+      width: 49.98%;
+    }
+
+    &.xl5 {
+      width: 41.65%;
+    }
+
+    &.xl4 {
+      width: 33.32%;
+    }
+
+    &.xl3 {
+      width: 24.99%;
+    }
+
+    &.xl2 {
+      width: 16.66%;
+    }
+
+    &.xl1 {
+      width: 8.33%;
+    }
+
+    &.flow-right-xl {
+      float: right;
+    }
+
+    &.flow-left-xl {
+      float: left;
+    }
+  }
+
+  .hidden-xl {
+    display: none;
+  }
+
+  .visible-xl {
+    display: block;
+  }
+}
+
+// Container 
+
+.container {
+  margin: 0 auto;
+  max-width: calculateRem(960px);
+  width: 100%;
+  padding-left: calculateRem(8px);
+  padding-right: calculateRem(8px);
+}
+
+// Row 
+
+.row {
+    .row{
+      margin-bottom: calculateRem(0px);
+    }  
+    @include clearfix();
+    margin-bottom: calculateRem(16px);
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
