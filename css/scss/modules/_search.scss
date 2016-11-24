@@ -1,0 +1,52 @@
+body{
+	background: $black;
+	font-family: $sans;
+}
+
+.search{
+	padding-top: 14px;
+	width: 100%;
+  	height: 51px;
+  	background-color: #282828;
+  	border-bottom: 1px solid #181818;
+  	margin-bottom: 24px;
+
+  	.row{
+  		margin-bottom: 0px;
+  	}
+
+  	.column{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	form{
+		position:relative;
+		font-size: 12px;
+
+		.icon-search{
+			position:absolute;
+			width: 13.4px;
+  			height: 14px;
+  			left: 7px;
+  			top: 5px;
+		}
+
+		input{
+			height: 24px;
+	  		width: 100%;
+	  		border-radius: 40px;
+	  		background-color: #ffffff;
+	  		padding: 3px 0px 4px 24px;
+	  		border:0px;
+
+	  		
+		}
+	}
+
+}
+
+
+
+
+
