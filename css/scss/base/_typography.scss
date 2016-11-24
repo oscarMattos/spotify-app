@@ -1,0 +1,51 @@
+// Typography
+ 
+.display4{
+	@include display4(); 
+	color: $secondary-text;
+}
+
+.display3{
+	@include display3(); 
+	color: $secondary-text;
+}
+
+.display2{
+	@include display2(); 
+	color: $secondary-text;
+}
+
+.display1{
+	@include display1(); 
+	color: $secondary-text;
+}
+
+.title{
+	@include title(); 
+	color: $primary-text;
+}
+
+.headline{
+	@include headline(); 
+	color: $primary-text;
+}
+
+.subheading{
+	@include subheading(); 
+	color: $primary-text;
+}
+
+.body2{
+	@include body2(); 
+	color: $primary-text;
+}
+
+.body1{
+	@include body1(); 
+	color: $primary-text;
+}
+
+.caption{
+	@include caption(); 
+	color: $disabled-text;
+}
